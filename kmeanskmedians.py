@@ -60,7 +60,7 @@ def kmeans(X,K,numOfIter,k_means):
                     m_y.append(bins[k][l][1])
                 if k_means == 1:
                     C_new[k] = np.array([statistics.mean(m_x), statistics.mean(m_y)])
-                else:
+                elif k_means == 0:
                     C_new[k] = np.array([statistics.median(m_x), statistics.median(m_y)]) 
             if C_new.all == C.all:
                 print ("number of iteration:", iteration)
@@ -90,11 +90,11 @@ def kmeans(X,K,numOfIter,k_means):
                 m_y.append(bins[k][l][1])
             if k_means == 1:
                 C[k] = np.array([statistics.mean(m_x), statistics.mean(m_y)])
-            else:
+            elif k_means == 0:
                 C[k] = np.array([statistics.median(m_x), statistics.median(m_y)])      
     return C
 
-C = kmeans(X,K=5,numOfIter=100, k_means=0)
+C = kmeans(X,K=5,numOfIter=100, k_means=1)
 C
 
 X = np.zeros([30*50,2])
