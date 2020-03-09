@@ -20,7 +20,7 @@ dots and the tracks are in red dots. It is obvious that K-means has no unique so
 the same. In the function I wrote, I shuffled the data set every time we initialized the starting centers. The way in which 
 the data is ordered affects the final results of the data set.
 
-K-medians here performed similarly as K-means. I didn't include many outliers here, if we had, we should see that the K-medians will be more robust to outliers and noises than K-menas, which means the plots will be more different also.
+K-medians here performed similarly as K-means. I didn't include many outliers here, if we had, we should see that the K-medians will be more robust to outliers and noises than K-means, which means the resulting plots will be more different.
 
 K-means pros:
 1. easy to implement and understand
