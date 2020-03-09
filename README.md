@@ -1,7 +1,7 @@
 # kmeanskmedians
 
 The location.mat contains 1500 points in 2D. Each point represents a mouse's location. My task was to put K mouse traps 
-to catach the mice and distances between trap and mice should be the smallest.
+to catch the mice and distances between trap and mice should be the smallest.
 
 I implemented two clustering algorithms, one is K-means and one is K-medians.
 
